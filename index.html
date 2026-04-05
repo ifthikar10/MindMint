@@ -8,15 +8,47 @@
 </head>
 <body data-page="home">
   <header class="site-header">
-    <a class="brand" href="index.html">Logo</a>
+  <div class="header-left">
+    <button class="icon-button" id="menuButton" type="button" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <nav class="top-nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a href="instructions.html?category=personality">Instructions</a>
-      <a href="quiz.html?category=personality">Quiz</a>
-      <a href="result.html">Results</a>
-    </nav>
-  </header>
+    <a class="brand" href="index.html">Logo</a>
+  </div>
+
+  <div class="header-center">
+    <form class="search-form" action="#" method="get">
+      <input
+        type="search"
+        class="search-input"
+        id="siteSearch"
+        name="q"
+        placeholder="Search........"
+        aria-label="Search quizzes"
+      />
+      <button class="search-button" type="submit" aria-label="Search">
+        🔍
+      </button>
+    </form>
+  </div>
+
+  <div class="header-right">
+    <a class="btn btn--small" href="login.html">Log In</a>
+    <a class="btn btn--small" href="signup.html">Sign Up</a>
+  </div>
+</header>
+
+<nav class="category-nav" id="categoryNav" aria-label="Quiz categories">
+  <a href="instructions.html?category=personality">Personality</a>
+  <a href="instructions.html?category=fashion">Fashion</a>
+  <a href="instructions.html?category=travel">Travel</a>
+  <a href="instructions.html?category=color">Color</a>
+  <a href="instructions.html?category=love">Love</a>
+  <a href="instructions.html?category=pets">Pets</a>
+  <a href="index.html#more">Explore More...</a>
+</nav>
 
   <main class="page-shell">
     <section class="hero">
