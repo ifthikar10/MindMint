@@ -1,68 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VibeQuiz | Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-page="home">
+<body>
   <header class="site-header">
-  <div class="header-left">
-    
+    <div class="container site-header-inner">
+      <button class="menu-btn" aria-label="Open menu"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <a class="brand" href="index.html"><span class="brand-mark">V</span><span>VibeQuiz</span></a>
+      <div class="search"><input type="search" placeholder="Search quizzes..." aria-label="Search quizzes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.6-3.6"></path></svg></div>
+      <div></div>
+      <div class="auth-actions"><a class="pill-btn" href="#">Log In</a><a class="pill-btn" href="#">Sign In</a></div>
+    </div>
+    <div class="container nav-chips">
+      <a href="instructions.html?quiz=personality">Personality</a>
+      <a href="instructions.html?quiz=fashion">Fashion</a>
+      <a href="instructions.html?quiz=travel">Travel</a>
+      <a href="instructions.html?quiz=color">Color</a>
+      <a href="instructions.html?quiz=love">Love</a>
+      <a href="instructions.html?quiz=pets">Pets</a>
+      <a href="instructions.html?quiz=personality">Explore More...</a>
+    </div>
+  </header>
 
-    <a class="brand" href="index.html">Logo</a>
-  </div>
-
-  <div class="header-center">
-    <form class="search-form" action="#" method="get">
-      <input
-        type="search"
-        class="search-input"
-        id="siteSearch"
-        name="q"
-        placeholder="Search........"
-        aria-label="Search quizzes"
-      />
-      <button class="search-button" type="submit" aria-label="Search">
-        🔍
-      </button>
-    </form>
-  </div>
-
-  <div class="header-right">
-    <a class="btn btn--small" href="login.html">Log In</a>
-    <a class="btn btn--small" href="signup.html">Sign Up</a>
-  </div>
-</header>
-
-<nav class="category-nav" id="categoryNav" aria-label="Quiz categories">
-  <a href="instructions.html?category=personality">Personality</a>
-  <a href="instructions.html?category=fashion">Fashion</a>
-  <a href="instructions.html?category=travel">Travel</a>
-  <a href="instructions.html?category=color">Color</a>
-  <a href="instructions.html?category=love">Love</a>
-  <a href="instructions.html?category=pets">Pets</a>
-  <a href="index.html#more">Explore More...</a>
-</nav>
-
-  <main class="page-shell">
+  <main class="page container">
     <section class="hero">
-      <h1>Choose a Quiz Category</h1>
-      <p>
-        Bright, playful quizzes made for young users, with visual cards and easy navigation.
-      </p>
+      <span class="badge">Bright, playful, young-friendly quiz design</span>
+      <h1>Choose a quiz category and discover your result.</h1>
+      <p>Built for a course project with a responsive layout, clear interaction flow, auto-advance questions, an instruction page, restart controls, progress tracking, and result pages designed to feel lively and easy to use.</p>
     </section>
 
-    <section class="category-grid" id="categoryGrid">
-      <!-- JS inserts category cards here -->
-    </section>
+    <div class="section-title">
+      <div>
+        <h2>Quiz Categories</h2>
+        <p>Select a category to start.</p>
+      </div>
+    </div>
+
+    <section class="grid category-grid" id="categoryGrid"></section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Your Website. All rights reserved.</p>
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo">VibeQuiz</div>
+        <div class="small-note"><strong>Address:</strong><br>123 Main Street, City<br>State Province, Country</div>
+        <div class="socials">
+          <span class="social-dot">◎</span>
+          <span class="social-dot">◉</span>
+          <span class="social-dot">✦</span>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Column one</div>
+        <ul class="footer-list"><li>Link one</li><li>Link two</li><li>Link three</li><li>Link four</li></ul>
+      </div>
+      <div>
+        <div class="footer-title">Column two</div>
+        <ul class="footer-list"><li>Link five</li><li>Link six</li><li>Link seven</li><li>Link eight</li></ul>
+      </div>
+      <div>
+        <div class="footer-title">Column three</div>
+        <ul class="footer-list"><li>Link nine</li><li>Link ten</li><li>Link eleven</li><li>Link twelve</li></ul>
+      </div>
+    </div>
+    <div class="container copyright"><span>© <span data-year></span> Your Website. All rights reserved.</span><span>Privacy Policy</span><span>Terms of Service</span></div>
   </footer>
 
-  <script type="module" src="app.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
