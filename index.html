@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html">Logo</a>
+
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="instructions.html?category=personality">Instructions</a>
+      <a href="quiz.html?category=personality">Quiz</a>
+      <a href="result.html">Results</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <h1>Choose a Quiz Category</h1>
+      <p>
+        Bright, playful quizzes made for young users, with visual cards and easy navigation.
+      </p>
+    </section>
+
+    <section class="category-grid" id="categoryGrid">
+      <!-- JS inserts category cards here -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Your Website. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
